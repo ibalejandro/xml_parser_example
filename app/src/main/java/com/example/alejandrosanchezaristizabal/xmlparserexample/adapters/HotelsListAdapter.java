@@ -82,7 +82,7 @@ public class HotelsListAdapter extends RecyclerView.Adapter<HotelsListAdapter.Vi
 
   @Override
   public int getItemCount() {
-    return Hotel.HOTELS.size();
+    return (Hotel.HOTELS != null ? Hotel.HOTELS.size() : 0);
   }
 
   @Override
